@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiszki</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <!-- MAIN MENU -->
+    <div class="main-menu">
+        <h1>Fiszki</h1>
+        <p>Upload a JSON file to practice Portuguese or Polish, or just try the sample words.</p>
+ 
+        <label for="fileAppend" class="custom-file-input">Add to the word list</label>
+        <input type="file" id="fileAppend" accept=".json" onchange="uploadFile()"/>
+        <br>
+ 
+        <label for="fileInput" class="custom-file-input">Replace the word list</label>
+        <input type="file" id="fileInput" accept=".json" onchange="replaceFile()"/>
+        <br>
+ 
+        <label for="howManyWordsToShow">Number of words to practice:</label>
+        <input type="number" id="howManyWordsToShow" min="1" max="10" value="10" />
+        <br>
+ 
+        <button onclick="togglePage(settingsPage)">Continue</button>
+    </div>
+ 
+    <!-- SETTINGS -->
+    <div class="settings" style="display:none;">
+        <h2>Settings</h2>
+ 
+        <div class="language-direction">
+            <h3>Direction</h3>
+            <label>
+                <input type="radio" name="language" value="pl-pt" checked />
+                🇵🇱 → 🇵🇹 Polish prompt, type Portuguese
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="language" value="pt-pl" />
+                🇵🇹 → 🇵🇱 Portuguese prompt, type Polish
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="language" value="random" />
+                🔀 Random direction each card
+            </label>
+        </div>
+ 
+        <div class="difficulty">
+            <h3>Difficulty</h3>
+            <label>
+                <input type="radio" name="difficulty" value="easy" checked />
+                Easy - accented letters not required (ą, ę, á, ô …)
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="difficulty" value="hard" />
+                Hard - all letters must be exact
+            </label>
+        </div>
+ 
+        <button onclick="startPractice()">Start practising</button>
+        <button onclick="togglePage(mainPage)">Go back</button>
+    </div>
+ 
+    <!-- PRACTICE -->
+    <div class="practice" style="display:none;">
+        <div class="card">
+            <div id="progress">0 / 10</div>
+            <div id="language-prompt">🇵🇱 Polish</div>
+            <div id="word-display">dzień dobry</div>
+            <div id="language-answer">🇵🇹 Portuguese:</div>
+            <input type="text" id="answer-input" placeholder="Enter translation…" onkeydown="if(event.key==='Enter') handleCheckAnswer()" />
+            <button onclick="handleCheckAnswer()">Check →</button>
+            <div id="remaining">words left in queue</div>
+        </div>
+    </div>
+ 
+</body>
+</html>
+ 
