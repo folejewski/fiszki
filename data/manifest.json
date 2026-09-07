@@ -1,0 +1,66 @@
+{
+  "kurs": "Portugalski Kurs Podstawowy",
+  "zrodlo": "Edgard - Audio Kurs",
+  "lekcje": [
+    {
+      "id": 1,
+      "tytul": "Podstawowe zwroty i wyrażenia",
+      "plik": "lekcja-01-zwroty-podstawowe.json"
+    },
+    {
+      "id": 2,
+      "tytul": "Liczebniki, dni tygodnia, pory roku i czas",
+      "plik": "lekcja-02-liczby-dni-czas.json"
+    },
+    {
+      "id": 3,
+      "tytul": "Człowiek i rodzina",
+      "plik": "lekcja-03-czlowiek-rodzina.json"
+    },
+    {
+      "id": 4,
+      "tytul": "Części ciała, cechy charakteru, opis osoby",
+      "plik": "lekcja-04-cialo-charakter-opis.json"
+    },
+    {
+      "id": 5,
+      "tytul": "Kolory, części garderoby, sklep i zakupy",
+      "plik": "lekcja-05-kolory-ubrania-zakupy.json"
+    },
+    {
+      "id": 6,
+      "tytul": "Żywność, jedzenie, restauracja",
+      "plik": "lekcja-06-jedzenie-restauracja.json"
+    },
+    {
+      "id": 7,
+      "tytul": "Komunikacja i podróżowanie",
+      "plik": "lekcja-07-podroz-komunikacja.json"
+    },
+    {
+      "id": 8,
+      "tytul": "Wakacje, czas wolny i hobby",
+      "plik": "lekcja-08-wakacje-hobby.json"
+    },
+    {
+      "id": 9,
+      "tytul": "W mieście, pytanie o drogę",
+      "plik": "lekcja-09-miasto-droga.json"
+    },
+    {
+      "id": 10,
+      "tytul": "Życie codzienne: dom, szkoła",
+      "plik": "lekcja-10-dom-szkola-codziennosc.json"
+    },
+    {
+      "id": 11,
+      "tytul": "Wypadki, nagłe zdarzenia, pomoc",
+      "plik": "lekcja-11-wypadki-pomoc.json"
+    },
+    {
+      "id": 12,
+      "tytul": "Praca i zawody",
+      "plik": "lekcja-12-praca-zawody.json"
+    }
+  ]
+}
