@@ -71,3 +71,5 @@ export default defineConfig([
   },
 ]);
 ```
+
+[![CI](https://github.com/folejewski/fiszki/actions/workflows/ci.yml/badge.svg)](https://github.com/folejewski/fiszki/actions/workflows/ci.yml)
