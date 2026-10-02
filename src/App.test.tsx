@@ -5,6 +5,6 @@ import App from "./App";
 describe("App", () => {
   it("shows the app name", () => {
     render(<App />);
-    expect(screen.getByRole("heading", { name: "Fiszki" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Fiszkiii" })).toBeInTheDocument();
   });
 });
